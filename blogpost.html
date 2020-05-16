@@ -10,24 +10,6 @@
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
 
-a:link {
-  color: #565264;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #565264;
-}
-
-a:hover {
-    color: #565264;
-    font-weight: bold;
-}
-
-a:active {
-  color: #565264;
-} 
-
         p {
             margin: 10px 60px 10px 60px;
         }
@@ -111,7 +93,7 @@ cite {
         }
 
         .header {
-            border: 0px;
+            border: 5px solid red;
             grid-area: head;
         }
 
@@ -120,14 +102,14 @@ cite {
             grid-gap: 10px;
             width: 100%;
             height: 100%;
-            border: 0px;
+            border: 5px solid red;
             grid-auto-flow: column;
             grid-template-areas:
             "head head"
             "nav nav"
-            "welcome welcome"
-            "side av"
-            "content content"
+            "blog blog"
+            "author author"
+            "side side"
             "footer footer";
 
         }
@@ -144,9 +126,30 @@ cite {
             padding: auto;
         }
 
+        .av2 {
+            width: 100px;
+            height: 100px;
+            background-image: url("https://i.ibb.co/M94zV3x/bryan-walker-J7zm-Hzpqhd-M-unsplash.jpg");
+            background-size: contain;
+            border-radius: 20%;
+
+            margin: 20px 0px 20px 20px;
+            padding: 20px;
+        }
+
+        .auth-bio {
+            margin: 20px 0px 0px 0px;
+            padding: 0;
+            
+        }
+
         .side {
             grid-area: side;
             margin: 30px 30px 0px 30px;
+        }
+
+        .blog {
+            grid-area: blog;
         }
 
         .nav {
@@ -158,10 +161,17 @@ cite {
             align-items: center;
             justify-content: space-evenly;
             list-style: none;
-            border: 0px;
+            border: 5px solid red;
             margin 0;
             padding: 0;
             grid-area: nav;
+        }
+
+        .author {
+            margin: 10px 60px 10px 60px;
+            grid-area: author;
+            display: flex;
+
         }
 
         .welcome {
@@ -169,7 +179,6 @@ cite {
             justify content: center;
             align-items: center;
             grid-area: welcome;
-            font-size: 20px;
         }
 
 
@@ -208,9 +217,9 @@ cite {
             grid-template-areas:
             "head head"
             "nav nav"
-            " av welcome"
-            "side content"
-            "side content"
+            "side blog"
+            "side blog"
+            "side author"
             "footer footer";
 
 }
@@ -227,15 +236,24 @@ cite {
             </div>
             <div class="nav">
                 <ul class="nav">
-                    <li><a href="https://joverb.github.io/udacityblog/" class="nav">Home</a></li>
-                    <li><a href="#" class="nav">About</a></li>
-                    <li><a href="#" class="nav">Contact</a></li>
+                    <li><button type="button" class="nav" a href="#">Home</a></li>
+                    <li><button type="button" class="nav" a href="#">About</a></li>
+                    <li><button type="button" class="nav" a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="welcome">
-                <p>Hi! I'm Jo Verbena and I'm training to be <em>front-end web developer</em> with <u>Udacity</u>. I hope you enjoy my blog and please feel free to follow me on social media, or <strong>subscribe</strong> for updates below.  
-                </p>
+           <div class="blog">
+            <h2>12th May 2020</h2><h2>Reasons to be Cheerful</h2>
+            <p>This is an example of a blog post where I am writing about the various reasons that I should be cheerful at this time. I recently became a mum in February and am enjoying spending time with my three month old Jamie Lou, and my partner Tom.</p>
+
+            <p> I have been studying front end web-development in Tom's garden music studio, which has been a lot of fun so far. I am on project one which is teaching me everything that can be done with HTML and CSS coding, using grids and flexboxes. I am finding coding requires quite a bit of patience and concentration to get things right, but is very rewarding.</p>
+            <p> I hope to continue my studies into front-end coding and with practice my code will get cleaner and more precise. It is very much a problem solving process and my skills are bound to improve when I put the hours in.</p>
+            <p> Now the weather is improving and I feel really lucky to be at home with my family, despite all the events going on in the world at the moment. I hope to use the time to really learn some great skills so that I can maybe apply them to some interesting work in the coming years. </p>
+            <p> I'm looking forward to the next project where I will be learning about Javascript.</p> 
             </div>
+<div class="author"><div class="av2"></div><div class="auth-bio"><p>Posted by Jo Verbena.</p>
+    <p>Student at Udacity.</p>
+    <p><em>Jo Verbena is a student at Udacity, formerly trained as an artist at Royal College of Art, London. She is a mum of one and lives by the sea in Hove, UK.</em></p></div></div>
+
             <div class="side">
                 <form action="/thanks.html">
                 <label for="subscribe"><h3>Subscribe</h3></label>
@@ -244,17 +262,13 @@ cite {
                 </form>
                 <h3>Blog Posts</h3>
                 <ul>
-                    <li><a href="blog/blogpost.html">Reasons to be cheerful.</a></li>
+                    <li>Reasons to be cheerful.</li>
                 </ul>
+          
+
             </div>
 
-            <div class="av"><img src="https://i.ibb.co/M94zV3x/bryan-walker-J7zm-Hzpqhd-M-unsplash.jpg" class="av">Follow Jo: <a href="#">LinkedIn</a> / <a href="#">Facebook</a> / <a href="#">Twitter</a></div>
-            <div class="content"><blockquote cite="http://www.worldwildlife.org/who/index.html">
-                It is never too late to have a happy childhood.
-                
-                </blockquote>
-                <cite>-- Tom Robbins, Still Life with a Woodpecker</cite>
-           </div>
+           
             <div class="footer">Website designed with <3 by Jo Verbena. 2020.</div>
         </div>
     </body>
