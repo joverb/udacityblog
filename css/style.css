@@ -183,9 +183,9 @@ input {
         grid-template-areas:
         "head head"
         "nav nav"
-        "side blog"
-        "side blog"
-        "side author"
+        "av welcome"
+        "side content"
+        "side content"
         "footer footer";
     
     }
