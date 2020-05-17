@@ -1,0 +1,23 @@
+h1 {
+    color: #75184F;
+    font-family: Abril Fatface;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-shadow: 1px 1px #000000;        }
+
+h2 {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    font-family: Nixie One;
+    font-size: 16px;
+}
+
+h3 {
+    margin: 20px 0px 0px 0px;
+    color: #B2827E;
+
+
+}
